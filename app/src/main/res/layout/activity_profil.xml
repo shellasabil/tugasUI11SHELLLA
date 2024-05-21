@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Profile Image and Username -->
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="39dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profil" />
+
+    <!-- Pengaturan Section -->
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="-53dp"
+        android:layout_marginBottom="16dp"
+        android:text="Nama Pengguna"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengaturan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/username"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Personal Information Button -->
+    <Button
+        android:id="@+id/btnPersonalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informasi Pribadi"
+        android:layout_below="@id/tvSettings"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FA445E"/>
+
+    <!-- Login and Security Button -->
+    <Button
+        android:id="@+id/btnLoginSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Masuk dan Keamanan"
+        android:layout_below="@id/btnPersonalInfo"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FA445E"/>
+
+    <!-- Payment and Billing Button -->
+    <Button
+        android:id="@+id/btnPaymentBilling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pembayaran dan Tagihan"
+        android:layout_below="@id/btnLoginSecurity"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FA445E"/>
+
+</RelativeLayout>

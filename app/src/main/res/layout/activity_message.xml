@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnTravel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMessage"
+        android:layout_marginTop="22dp"
+        android:text="Berpergian"
+        android:backgroundTint="#FA445E"/>
+
+    <Button
+        android:id="@+id/btnSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMessage"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@id/btnTravel"
+        android:text="Dukungan"
+        android:backgroundTint="#FA445E"/>
+
+    <Button
+        android:id="@+id/btnParallel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMessage"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@id/btnSupport"
+        android:text="Semua"
+        android:backgroundTint="#FA445E"/>
+
+    <TextView
+        android:id="@+id/tvNoMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anda tidak memiliki pesan"
+        android:layout_below="@id/btnTravel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
